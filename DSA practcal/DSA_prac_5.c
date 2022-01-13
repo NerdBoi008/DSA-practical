@@ -20,7 +20,7 @@ void push(int arr[], int n)
     else
     {
         int value;
-        printf("Enter value to Enter: ");
+        printf("Enter value: ");
         scanf("%d",&value);
         arr[top+1] = value;
         top++;
