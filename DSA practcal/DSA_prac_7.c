@@ -121,7 +121,6 @@ void insertAtMiddle()
         
         if(trav->data == slctVal)
         {
-            printf("sdfag");
             tmp->next = trav->next;
             trav->next = tmp;
         }
