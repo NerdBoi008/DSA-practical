@@ -11,7 +11,7 @@ int isStackUnderflow()
     return (top == -1) ? 1 : 0;
 }
 
-void push(int arr[], int n)
+void push(int arr[])
 {
     if(isStackOverflow())
     {
@@ -28,7 +28,7 @@ void push(int arr[], int n)
     }    
 }
 
-void pop(int arr[], int n)
+void pop(int arr[])
 {
     if(isStackUnderflow())
     {
@@ -41,7 +41,7 @@ void pop(int arr[], int n)
     }
 }
 
-void peep(int arr[],int n)
+void peep(int arr[])
 {
     if(isStackUnderflow())
     {
@@ -53,7 +53,7 @@ void peep(int arr[],int n)
     }
 }
 
-void change(int arr[], int n)
+void change(int arr[])
 {
     if(isStackUnderflow())
     {
@@ -91,11 +91,11 @@ int main(void)
     while (1)
     {
         printf("\n--- Stack opration. \n1) Insert(PUSH). \n2) Delete(POP). \n3) PEEP. \n4) CHANGE. \n5) DISPLAY. \n6) Exit \nEnter choice : ");
-        scanf("%d",&choice);
-        if(choice == 1) { push(arr, 10); }
-        else if(choice == 2) { pop(arr, 10); }
-        else if(choice == 3) { peep(arr, 10); }
-        else if(choice == 4) { change(arr, 10); }
+        scanf("%d",&choice);    
+        if(choice == 1) { push(arr); }
+        else if(choice == 2) { pop(arr); }
+        else if(choice == 3) { peep(arr); }
+        else if(choice == 4) { change(arr); }
         else if(choice == 5) { display(arr); }
         else { break; }
     }
