@@ -73,7 +73,7 @@ void display(int arr[])
 {
     if(isStackUnderflow())
     {
-        printf("Stack is Empty.\n5");
+        printf("Stack is Empty.\n");
     }
     else
     {   
