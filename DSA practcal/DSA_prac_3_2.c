@@ -2,7 +2,7 @@
 
 void binarySearch(int arr[], int len, int value)
 {
-	int right = len, left = 0, mid, flag = 0,count = 0;
+	int right = len, left = 0, mid, flag = 0;
 	while (left <= right)
 	{
 		mid = left + (right - left) / 2;
